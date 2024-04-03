@@ -1,9 +1,6 @@
 from typing import Iterable, Callable
-
-from PyQt5.QtWidgets import QWidget, QTableWidgetItem, QMainWindow
-
-from Service.service_update import ServiceUpdate
-from Ui_service import Ui_Form_service, Ui_MainWindow_service, Ui_Form_update_service
+from PyQt5.QtWidgets import QWidget
+from Ui_service import Ui_Form_service
 from database import Service, get_session
 
 class ServiceCreate(QWidget, Ui_Form_service):

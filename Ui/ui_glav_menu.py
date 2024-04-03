@@ -11,7 +11,7 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-class Ui_Form_glav_menu(object):
+class Ui_Form_main_menu(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
         Form.resize(508, 724)
