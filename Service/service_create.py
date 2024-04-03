@@ -3,7 +3,7 @@ from typing import Iterable, Callable
 from PyQt5.QtWidgets import QWidget, QTableWidgetItem, QMainWindow
 
 from Service.service_update import ServiceUpdate
-from Ui import Ui_Form_service, Ui_MainWindow_service, Ui_Form_update
+from Ui_service import Ui_Form_service, Ui_MainWindow_service, Ui_Form_update_service
 from database import Service, get_session
 
 class ServiceCreate(QWidget, Ui_Form_service):

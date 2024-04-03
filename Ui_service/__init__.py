@@ -1,0 +1,3 @@
+from .ui_service_create import Ui_Form_service
+from .ui_service_table import Ui_MainWindow_service
+from .ui_service_update import Ui_Form_update_service

@@ -1,10 +1,10 @@
 from typing import Iterable, Callable
 from PyQt5.QtWidgets import QWidget
-from Ui import  Ui_Form_update
+from Ui_service import Ui_Form_update_service
 from database import Service, get_session
 
 
-class ServiceUpdate(QWidget, Ui_Form_update):
+class ServiceUpdate(QWidget, Ui_Form_update_service):
 
     def __init__(self, service: Service, callbacks: Iterable[Callable]):
         super().__init__()

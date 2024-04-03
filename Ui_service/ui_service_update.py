@@ -11,7 +11,7 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-class Ui_Form_update(object):
+class Ui_Form_update_service(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
         Form.resize(421, 344)

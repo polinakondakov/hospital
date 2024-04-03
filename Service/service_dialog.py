@@ -1,6 +1,6 @@
 from typing import Iterable, Callable
 from PyQt5.QtWidgets import QWidget, QDialog
-from Ui import Ui_Form_update, Ui_Dialog_delete
+from Ui_service import Ui_Form_update, Ui_Dialog_delete
 from database import Service, get_session
 
 

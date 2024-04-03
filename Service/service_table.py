@@ -4,7 +4,7 @@ from PyQt5.QtWidgets import QMainWindow, QTableWidgetItem
 
 from Service.service_create import ServiceCreate
 from Service.service_update import ServiceUpdate
-from Ui import Ui_MainWindow_service
+from Ui_service import Ui_MainWindow_service
 from database import get_session, Service
 
 
