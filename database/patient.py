@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String
+from sqlalchemy import Column, Integer, String, Date
 from sqlalchemy.orm import relationship
 
 from database.base_meta import Base
@@ -11,7 +11,7 @@ class Patient(Base):
     full_name = Column(String(100), nullable=False)
     phone_number = Column(Integer, nullable=False)
     sex = Column(String(10), nullable=False)
-    bdate = Column(String(20), nullable=False)
+    bdate = Column(Date, nullable=True)
 
     # Устанавливаются связи
     #doctors = relationship("Doctor", back_populates="patient")

@@ -66,7 +66,7 @@ class Ui_Form_menu(object):
         self.label.setGeometry(QtCore.QRect(0, -90, 711, 511))
         self.label.setText("")
         self.label.setPixmap(QtGui.QPixmap(
-            "../../OneDrive/Изображения/Снимки экрана/Снимок экрана 2024-03-31 113316.png"))
+            "./image/Снимок экрана 2024-03-31 113316.png"))
         self.label.setObjectName("label")
         self.label.raise_()
         self.push_button_appointment.raise_()
