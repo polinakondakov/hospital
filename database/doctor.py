@@ -12,7 +12,8 @@ class Doctor(Base):
     specialisation = Column(String(50), nullable=False)
 
     # Устанавливаются связи
-    patients = relationship("Patient", back_populates="doctor")
+    #patients = relationship("Patient", back_populates="doctor")
+    services = relationship("Service", back_populates="doctor")
     appointments = relationship("Appointment", back_populates="doctor")
 
     def __str__(self):

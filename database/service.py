@@ -8,7 +8,7 @@ class Service(Base):
 
     # Определяются столбцы в таблице
     id = Column(Integer, primary_key=True, autoincrement=True)
-    doctor_id = Column(ForeignKey("Doctor.id"))
+    doctor_id = Column(Integer, ForeignKey("Doctor.id"))
     title = Column(String(100), nullable=False)
     price = Column(Integer, nullable=False)
 

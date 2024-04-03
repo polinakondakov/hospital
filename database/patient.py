@@ -14,7 +14,7 @@ class Patient(Base):
     bdate = Column(String(20), nullable=False)
 
     # Устанавливаются связи
-    doctors = relationship("Doctor", back_populates="patient")
+    #doctors = relationship("Doctor", back_populates="patient")
     appointments = relationship("Appointment", back_populates="patient")
 
     def __str__(self):
