@@ -1,5 +1,6 @@
 import sys
 
+from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import QWidget, QApplication
 from Service.service_table import ServiceTable
 from Ui import Ui_Form_no_password
@@ -30,7 +31,7 @@ class Password(QWidget, Ui_Form_password):
     def __init__(self):  # просто появляется
         super().__init__()
         self.setupUi(self)
-        self.pushButton.clicked.connect(self.chek)
+        self.pushButton.clicked.connect(self.chek) #можно заходить и по кнопке
     def chek(self):
         if self.lineEdit.text() == "198687":
             self.window = Menu()
@@ -40,6 +41,9 @@ class Password(QWidget, Ui_Form_password):
             self.window.show()
             self.close()
         self.close()
+    def keyPressEvent(self, event): #можно заходить жмякнув enter
+        if event.key() == Qt.Key_Return:
+            self.chek()
 
 #Сообщение об ошибке
 class No_Password(QWidget, Ui_Form_no_password):
