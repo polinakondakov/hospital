@@ -3,9 +3,10 @@ import sys
 from PyQt5.QtWidgets import QWidget, QApplication
 from Service.service_table import ServiceTable
 from Ui import Ui_Form_no_password
-from Ui.ui_glav_menu import Ui_Form_main_menu
+from Ui.ui_main_menu import Ui_Form_main_menu
 from Ui.ui_menu import Ui_Form_menu
 from Ui.ui_password import Ui_Form_password
+from Ui.ui_usi_pochki import Ui_Form_pochki
 
 # ошибки
 sys._excepthook = sys.excepthook
@@ -52,9 +53,18 @@ class Menu(QWidget, Ui_Form_menu):
         super().__init__()
         self.setupUi(self)
         self.push_button_service.clicked.connect(self.open_service)
+        self.push_button_appointment.clicked.connect(self.open_appointment)
     def open_service(self):
         self.window = ServiceTable()
         self.window.show()
+    def open_appointment(self):
+        self.window = Usi_pochki()
+        self.window.show()
+
+class Usi_pochki(QWidget, Ui_Form_pochki):
+    def __init__(self):  # просто появляется
+        super().__init__()
+        self.setupUi(self)
 
 
 app = QApplication(sys.argv)

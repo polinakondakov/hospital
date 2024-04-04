@@ -63,10 +63,10 @@ class Ui_Form_menu(object):
 "color: rgb(0, 0, 0);")
         self.textBrowser.setObjectName("textBrowser")
         self.label = QtWidgets.QLabel(Form)
-        self.label.setGeometry(QtCore.QRect(0, -90, 711, 511))
+        self.label.setGeometry(QtCore.QRect(-10, -55, 731, 441))
         self.label.setText("")
-        self.label.setPixmap(QtGui.QPixmap(
-            "./image/Снимок экрана 2024-03-31 113316.png"))
+        self.label.setPixmap(QtGui.QPixmap("image/основной фон.png"))
+        self.label.setScaledContents(True)
         self.label.setObjectName("label")
         self.label.raise_()
         self.push_button_appointment.raise_()

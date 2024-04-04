@@ -14,10 +14,9 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Form_pochki(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
-        Form.resize(607, 124)
-        Form.setStyleSheet("")
+        Form.resize(764, 157)
         self.textBrowser = QtWidgets.QTextBrowser(Form)
-        self.textBrowser.setGeometry(QtCore.QRect(0, 0, 611, 301))
+        self.textBrowser.setGeometry(QtCore.QRect(-10, 0, 791, 261))
         self.textBrowser.setObjectName("textBrowser")
 
         self.retranslateUi(Form)
@@ -26,10 +25,9 @@ class Ui_Form_pochki(object):
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Form"))
-        Form.setToolTip(_translate("Form", "<html><head/><body><p>Не забудьте напомнить про акцию! При записи на прием к терапевту, полный анализ крови в подарок!!!</p></body></html>"))
         self.textBrowser.setHtml(_translate("Form", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:7.8pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:16pt; color:#ff0000;\">НЕ ЗАБУДЬТЕ НАПОМНИТЬ ПРО АКЦИЮ! </span></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:16pt; color:#ff0000;\">При записи на прием к терапевту, узи почки в подарок!!!</span></p></body></html>"))
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
+"<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:20pt; color:#ff0000;\">Администратор! Не забудь напомнить, что при записи к терапевту узи почки в подарок!</span></p></body></html>"))

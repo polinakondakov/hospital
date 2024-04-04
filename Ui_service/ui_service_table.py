@@ -37,6 +37,14 @@ class Ui_MainWindow_service(object):
         self.tableWidget.setHorizontalHeaderItem(2, item)
         item = QtWidgets.QTableWidgetItem()
         self.tableWidget.setHorizontalHeaderItem(3, item)
+        self.tableWidget.setAlternatingRowColors(True)
+        self.tableWidget.horizontalHeader().setSectionResizeMode(QtWidgets.QHeaderView.Stretch)  # !!!
+        self.tableWidget.verticalHeader().setDefaultSectionSize(20)
+        self.tableWidget.horizontalHeader().setDefaultSectionSize(80)
+        self.tableWidget.horizontalHeader().setSectionResizeMode(
+            0, QtWidgets.QHeaderView.Fixed)
+        self.tableWidget.horizontalHeader().setSectionResizeMode(
+            1, QtWidgets.QHeaderView.Fixed)
         self.tableWidget.horizontalHeader().setCascadingSectionResizes(False)
         self.tableWidget.horizontalHeader().setSortIndicatorShown(False)
         self.tableWidget.horizontalHeader().setStretchLastSection(True)

@@ -159,17 +159,20 @@ p, li { white-space: pre-wrap; }
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>-90</y>
-     <width>711</width>
-     <height>511</height>
+     <x>-10</x>
+     <y>-55</y>
+     <width>731</width>
+     <height>441</height>
     </rect>
    </property>
    <property name="text">
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>../../OneDrive/Изображения/Снимки экрана/Снимок экрана 2024-03-31 113316.png</pixmap>
+    <pixmap>../../image/основной фон.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
    </property>
   </widget>
   <zorder>label</zorder>
