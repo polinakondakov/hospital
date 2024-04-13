@@ -1,13 +1,11 @@
 import sys
 
-from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import QWidget, QApplication
 from Service.service_table import ServiceTable
 from Ui import Ui_Form_no_password
 from Ui.ui_main_menu import Ui_Form_main_menu
 from Ui.ui_menu import Ui_Form_menu
 from Ui.ui_password import Ui_Form_password
-from Ui.ui_usi_pochki import Ui_Form_pochki
 
 # ошибки
 sys._excepthook = sys.excepthook
@@ -31,7 +29,7 @@ class Password(QWidget, Ui_Form_password):
     def __init__(self):  # просто появляется
         super().__init__()
         self.setupUi(self)
-        self.pushButton.clicked.connect(self.chek) #можно заходить и по кнопке
+        self.pushButton.clicked.connect(self.chek)
     def chek(self):
         if self.lineEdit.text() == "198687":
             self.window = Menu()
@@ -41,9 +39,6 @@ class Password(QWidget, Ui_Form_password):
             self.window.show()
             self.close()
         self.close()
-    def keyPressEvent(self, event): #можно заходить жмякнув enter
-        if event.key() == Qt.Key_Return:
-            self.chek()
 
 #Сообщение об ошибке
 class No_Password(QWidget, Ui_Form_no_password):
@@ -57,18 +52,9 @@ class Menu(QWidget, Ui_Form_menu):
         super().__init__()
         self.setupUi(self)
         self.push_button_service.clicked.connect(self.open_service)
-        self.push_button_appointment.clicked.connect(self.open_appointment)
     def open_service(self):
         self.window = ServiceTable()
         self.window.show()
-    def open_appointment(self):
-        self.window = Usi_pochki()
-        self.window.show()
-
-class Usi_pochki(QWidget, Ui_Form_pochki):
-    def __init__(self):  # просто появляется
-        super().__init__()
-        self.setupUi(self)
 
 
 app = QApplication(sys.argv)
