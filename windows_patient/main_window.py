@@ -39,6 +39,7 @@ class MainWindow(QMainWindow, UiMainWindow):
             self.tableWidget.setItem(rowPosition, 2, QTableWidgetItem(str(patient.phone_number)))
             self.tableWidget.setItem(rowPosition, 3, QTableWidgetItem(patient.sex))
             self.tableWidget.setItem(rowPosition, 4, QTableWidgetItem(str(patient.bdate)))
+            self.tableWidget.setItem(rowPosition, 5, QTableWidgetItem(str(patient.comments)))
 
     def table_widget_cell_clicked(self, row, column):
         self.current_row = row

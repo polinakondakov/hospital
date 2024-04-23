@@ -34,7 +34,7 @@
     <string notr="true"/>
    </property>
    <property name="text">
-    <string>Войти как пациент</string>
+    <string>Записаться на прием</string>
    </property>
    <property name="autoRepeatDelay">
     <number>300</number>

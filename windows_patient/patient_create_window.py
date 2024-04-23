@@ -21,10 +21,12 @@ class PatientCreate(QWidget, UiPatientCreateForm):
         phone_number = self.line_edit_phone_number.text()
         sex = self.line_edit_sex.text()
         bdate = self.dateEdit.date().toPyDate()
-        new_patient = Patient(full_name = full_name,
-                              phone_number = phone_number,
-                              sex = sex,
-                              bdate = bdate)
+        comments = self.line_edit_comments.text()
+        new_patient = Patient(full_name=full_name,
+                              phone_number=phone_number,
+                              sex=sex,
+                              bdate=bdate,
+                              comments=comments)
         self.session.add(new_patient)
         self.session.commit()
         self.custom_close()
@@ -34,4 +36,3 @@ class PatientCreate(QWidget, UiPatientCreateForm):
         for callback in self.callbacks:
             callback()
         self.close()
-
